@@ -1,146 +1,71 @@
-# 📄 CV Online - Curriculum Vitae
+# Mi CV Online
 
-Este es mi curriculum vitae online, diseñado para ser desplegado en GitHub Pages.
+Mi currículum vitae alojado en GitHub Pages. Lo armé para tener una versión web accesible de mi perfil profesional.
 
-## 🌟 Características
+## Características
 
-- Diseño responsive y profesional
-- Compatible con todos los navegadores modernos
-- Optimizado para impresión
-- Fácil de personalizar
-- Desplegable en GitHub Pages
+- Responsive (se ve bien en celular y computadora)
+- Se puede imprimir decentemente
+- Fácil de actualizar
+- Alojado gratis en GitHub Pages
 
-## 🚀 Cómo Desplegar en GitHub Pages
+## Cómo lo desplegué en GitHub Pages
 
-### Paso 1: Crear un repositorio en GitHub
+Por si alguien quiere hacer algo similar:
 
-1. Ve a [GitHub](https://github.com) e inicia sesión
-2. Crea un nuevo repositorio con el nombre que prefieras (ej: `mi-cv`, `curriculum-vitae`, etc.)
-3. **NO** inicialices el repositorio con README, .gitignore o licencia
-
-### Paso 2: Subir tus archivos
-
-Abre una terminal en esta carpeta y ejecuta los siguientes comandos:
+1. Creé un repositorio nuevo en GitHub
+2. Subí mis archivos con estos comandos:
 
 ```bash
-# Inicializar Git en tu proyecto
 git init
-
-# Añadir todos los archivos
 git add .
-
-# Hacer el primer commit
-git commit -m "Primer commit: CV online"
-
-# Conectar con tu repositorio de GitHub (reemplaza TU-USUARIO y TU-REPOSITORIO)
-git remote add origin https://github.com/TU-USUARIO/TU-REPOSITORIO.git
-
-# Subir los archivos
+git commit -m "primer commit"
+git remote add origin https://github.com/USUARIO/REPO.git
 git branch -M main
 git push -u origin main
 ```
 
-### Paso 3: Activar GitHub Pages
+3. En Settings > Pages del repositorio, activé GitHub Pages desde la rama main
+4. Listo, quedó en `https://USUARIO.github.io/REPO/`
 
-1. Ve a tu repositorio en GitHub
-2. Haz clic en **Settings** (Configuración)
-3. En el menú lateral, haz clic en **Pages**
-4. En **Source**, selecciona la rama **main** y la carpeta **/ (root)**
-5. Haz clic en **Save**
-6. ¡Listo! Tu CV estará disponible en `https://TU-USUARIO.github.io/TU-REPOSITORIO/`
+## Cómo actualizar el contenido
 
-## ✏️ Personalizar tu CV
+Todo está en `index.html`. Ahí modifico:
 
-### 1. Información Personal
+- Nombre y datos de contacto
+- Perfil profesional
+- Experiencia
+- Proyectos
+- Habilidades
+- Educación e idiomas
 
-Edita el archivo `index.html` y busca las siguientes secciones para actualizarlas con tu información:
+Para cambiar colores edito `assets/css/main.css`. La foto de perfil va en `assets/images/profile.jpg`.
 
-- **Nombre y título**: Líneas con `<h1 class="name">` y `<h3 class="tagline">`
-- **Contacto**: Sección `<div class="contact-container">`
-- **Foto de perfil**: Coloca tu foto en `assets/images/profile.jpg` (recomendado: 200x200px)
-
-### 2. Contenido del CV
-
-Actualiza las siguientes secciones en `index.html`:
-
-- **Perfil Profesional**: Sección `summary-section`
-- **Experiencia Laboral**: Sección `experiences-section`
-- **Proyectos**: Sección `projects-section`
-- **Habilidades**: Sección `skills-section`
-- **Educación**: Sección en el sidebar `education-container`
-- **Idiomas**: Sección `languages-container`
-- **Intereses**: Sección `interests-container`
-
-### 3. Personalizar Colores
-
-Edita `assets/css/main.css` para cambiar los colores:
-
-```css
-/* Color principal (azul): */
-background: #42A8C0; /* Cambia este valor */
-
-/* Enlaces: */
-color: #2d7788; /* Cambia este valor */
-```
-
-### 4. Añadir tu Foto
-
-1. Coloca tu foto de perfil en `assets/images/profile.jpg`
-2. Tamaño recomendado: 200x200 píxeles
-3. Formato: JPG o PNG
-
-## 📱 Responsive
-
-El CV es completamente responsive y se adapta a:
-- 📱 Móviles
-- 📱 Tablets
-- 💻 Desktop
-- 🖨️ Impresión
-
-## 🎨 Estructura de Archivos
+## Estructura del proyecto
 
 ```
-curriculumVitae/
-│
-├── index.html              # Página principal
-├── README.md              # Este archivo
-│
+cv-victorcruz/
+├── index.html
+├── README.md
 └── assets/
     ├── css/
-    │   └── main.css       # Estilos personalizados
+    │   └── main.css
     ├── js/
-    │   └── main.js        # JavaScript
+    │   └── main.js
     └── images/
-        └── profile.jpg    # Tu foto de perfil (añádela aquí)
+        └── profile.jpg
 ```
 
-## 🔧 Tecnologías Utilizadas
+## Tecnologías usadas
 
-- HTML5
-- CSS3
-- JavaScript (jQuery)
+- HTML5, CSS3, JavaScript
 - Bootstrap 4.6.2
-- Font Awesome 6.4.0
+- Font Awesome para los íconos
 
-## 📝 Licencia
+## Notas
 
-Este template está basado en un diseño de [Xiaoying Riley](http://themes.3rdwavemedia.com/) bajo licencia Creative Commons Attribution 3.0.
-
-## 💡 Tips
-
-1. **Actualiza regularmente**: Mantén tu CV actualizado con tu experiencia más reciente
-2. **Links funcionales**: Asegúrate de que todos los enlaces a redes sociales y proyectos funcionen
-3. **SEO**: Actualiza las meta tags en el `<head>` de index.html para mejorar el SEO
-4. **Dominio personalizado** (opcional): Puedes configurar un dominio personalizado en GitHub Pages
-
-## 🤝 Soporte
-
-Si tienes problemas o preguntas:
-- Revisa la [documentación de GitHub Pages](https://docs.github.com/es/pages)
-- Verifica que todos los archivos estén en su lugar correcto
-- Asegúrate de que las rutas en el HTML sean correctas
+El template base es de Xiaoying Riley (Creative Commons Attribution 3.0), lo adapté a mis necesidades.
 
 ---
 
-**Autor:** Victor Williams Cruz Mamani  
-**¡Buena suerte con tu búsqueda de empleo!** 🚀
+Victor Williams Cruz Mamani
