@@ -19,7 +19,12 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: 700;
 }
 
@@ -177,7 +182,7 @@ p {
 }
 
 .main-wrapper {
-    background: #fff;
+    background: #9ad1f8;
     padding: 60px;
     padding-right: 340px;
 }
@@ -337,9 +342,7 @@ p {
 }
 
 /* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-
-}
+@media (min-width: 768px) {}
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
@@ -360,14 +363,10 @@ p {
 }
 
 /* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-
-}
+@media (min-width: 1200px) {}
 
 /* Ex-Large devices (xlarge desktops, 1400px and up) */
-@media (min-width: 1400px) {
-
-}
+@media (min-width: 1400px) {}
 
 /* Print Styles */
 @media print {
