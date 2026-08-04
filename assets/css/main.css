@@ -368,6 +368,65 @@ p {
 /* Ex-Large devices (xlarge desktops, 1400px and up) */
 @media (min-width: 1400px) {}
 
+/* ======= Stats Radar Card ======= */
+.stats-radar-card {
+    background: #090e15;
+    border-radius: 12px;
+    padding: 25px 20px 20px 20px;
+    margin-bottom: 30px;
+    color: #e2e8f0;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    border: 1px solid #1e293b;
+    position: relative;
+    overflow: hidden;
+}
+
+.stats-radar-card .card-header-title {
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #f1f5f9;
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.stats-radar-card .radar-container {
+    width: 100%;
+    max-width: 540px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stats-radar-card svg {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+}
+
+.stats-radar-card .card-footer-tag {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 700;
+    color: #f1f5f9;
+    margin-top: 10px;
+}
+
+.stats-radar-card .card-footer-tag .dot {
+    width: 10px;
+    height: 10px;
+    background-color: #ff9d42;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 6px;
+    box-shadow: 0 0 8px #ff9d42;
+}
+
 /* Print Styles */
 @media print {
     @page {
@@ -405,7 +464,8 @@ p {
     }
 
     .section,
-    .item {
+    .item,
+    .stats-radar-card {
         break-inside: avoid;
         page-break-inside: avoid;
     }
