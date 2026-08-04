@@ -372,19 +372,27 @@ p {
 @media print {
     body {
         padding: 0;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
     }
 
     .wrapper {
         box-shadow: none;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
     }
 
     .sidebar-wrapper {
         position: static;
         width: 100%;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
     }
 
     .main-wrapper {
         padding: 30px;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
     }
 
     a[href]:after {
