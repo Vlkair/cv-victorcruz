@@ -370,29 +370,44 @@ p {
 
 /* Print Styles */
 @media print {
-    body {
-        padding: 0;
+    @page {
+        margin: 0;
+    }
+
+    * {
         -webkit-print-color-adjust: exact !important;
         print-color-adjust: exact !important;
+    }
+
+    body {
+        padding: 0;
+        background: #586c73 !important;
     }
 
     .wrapper {
         box-shadow: none;
-        -webkit-print-color-adjust: exact !important;
-        print-color-adjust: exact !important;
+        max-width: 100% !important;
+        position: relative !important;
     }
 
     .sidebar-wrapper {
-        position: static;
-        width: 100%;
-        -webkit-print-color-adjust: exact !important;
-        print-color-adjust: exact !important;
+        position: absolute !important;
+        right: 0 !important;
+        top: 0 !important;
+        width: 280px !important;
+        height: 100% !important;
+        min-height: 100% !important;
     }
 
     .main-wrapper {
-        padding: 30px;
-        -webkit-print-color-adjust: exact !important;
-        print-color-adjust: exact !important;
+        padding: 40px !important;
+        padding-right: 320px !important;
+    }
+
+    .section,
+    .item {
+        break-inside: avoid;
+        page-break-inside: avoid;
     }
 
     a[href]:after {
